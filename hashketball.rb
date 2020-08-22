@@ -1,10 +1,24 @@
 # Write your code below game_hash
-def game_hash
+# Write your code here!
+
+
+
+
+# Write your code below game_hash
+def 
+  
+  game_hash
   {
-    home: {
+
+
+    home: 
+    {
+
       team_name: "Brooklyn Nets",
-      colors: ["Black", "White"],
-      players: [
+      colors:  [ "Black", "White" ],
+      players: 
+      [
+
         {
           player_name: "Alan Anderson",
           number: 0,
@@ -60,12 +74,20 @@ def game_hash
           blocks: 11,
           slam_dunks: 1
         }
+
       ]
+
     },
-    away: {
+
+
+    away: 
+    {
+
       team_name: "Charlotte Hornets",
-      colors: ["Turquoise", "Purple"],
-      players: [
+      colors:  [ "Turquoise", "Purple" ],
+      players: 
+      [
+
         {
           player_name: "Jeff Adrien",
           number: 4,
@@ -121,12 +143,14 @@ def game_hash
           blocks: 5,
           slam_dunks: 12
         }
+
       ]
+
     }
+
+
   }
 end
-
-
 
 
 # Write code here
