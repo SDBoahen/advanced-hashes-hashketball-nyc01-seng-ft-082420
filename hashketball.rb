@@ -243,7 +243,7 @@ def
   
   player_numbers(j_nums)
   puts
-  puts "Numbers::  { #{j_nums} }"
+  puts "Numbers For::  { #{j_nums} }"
   puts
 
     jerseys = []
