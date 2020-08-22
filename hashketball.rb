@@ -13,7 +13,7 @@ def
 
       team_name: "Brooklyn Nets",
       colors:  [ "Black", "White" ],
-      players:
+      players: 
       [
 
         {
@@ -82,7 +82,7 @@ def
 
       team_name: "Charlotte Hornets",
       colors:  [ "Turquoise", "Purple" ],
-      players:
+      player_names: 
       [
 
         {
@@ -166,7 +166,7 @@ def
 
   game_hash.each do |team, stats_n_dats|
   
-    stats_n_dats[:player_names].each do |stats|
+    stats_n_dats[:players].each do |stats|
 
       if  stats[:player_name] == player_name
           points = stats[:points]             end
@@ -190,7 +190,7 @@ def
 
   game_hash.each do |team, stats_n_dats|
 
-    stats_n_dats[:player_names].each do |stats|
+    stats_n_dats[:players].each do |stats|
 
       if  stats[:player_name] == player_name 
           size = stats[:shoe]                 end
@@ -263,7 +263,7 @@ def
 
        stats_n_dats.each do |key, value|
 
-        if key == :player_names
+        if key == :players
 
            value.each do |player_name|
 
@@ -294,7 +294,7 @@ def
 
     stats_n_dats.each do |key, value|
 
-      if key == :player_names
+      if key == :players
 
         value.each do |player_name|
 
@@ -326,7 +326,7 @@ def
   
   game_hash.each do |team, stats_n_dats|
 
-    stats_n_dats[:player_names].each do |player_name|
+    stats_n_dats[:players].each do |player_name|
 
       if  player_name[:shoe] > big_shoe
           big_shoe = player_name[:shoe]
