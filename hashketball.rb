@@ -161,6 +161,9 @@ end
 def 
   
   num_points_scored(player_name)
+  puts
+  puts "Player Name::  { #{player_name} }"
+  puts
   
     points_scored = 0
 
@@ -174,6 +177,7 @@ def
                                       end
                  end
 
+  puts puts puts puts
   points_scored
 
 
@@ -185,7 +189,10 @@ end
 def 
   
   shoe_size(player_name)
-  
+  puts
+  puts "Player Name::  { #{player_name} }"
+  puts
+
     size = 0 
 
   game_hash.each do |team, stats_n_dats|
@@ -198,6 +205,7 @@ def
                  end
                                      end
 
+  puts puts puts puts                                     
   size
 
 
@@ -209,6 +217,9 @@ end
 def 
   
   team_colors(team_at)
+  puts
+  puts "Team::  { #{team_at} }"
+  puts
 
     colors = []
 
@@ -219,6 +230,7 @@ def
                                             end
                  end
 
+  puts puts puts puts                 
   colors
 
 
@@ -229,31 +241,10 @@ end
 
 def 
   
-  team_names
-  
-    teams = []
-
-  game_hash.each do |team, stats_n_dats|
-
-    stats_n_dats.each do |details, info|
-
-      if  details == :team_name
-          teams << info     end
-
-                      end
-                 end
-
-  teams
-
-
-end
-
-
-
-
-def 
-  
   player_numbers(j_nums)
+  puts
+  puts "Numbers::  { #{j_nums} }"
+  puts
 
     jerseys = []
   
@@ -278,6 +269,7 @@ def
 
                  end
 
+  puts puts puts puts                 
   return jerseys
 
 
@@ -289,6 +281,9 @@ end
 def 
   
   player_stats(game_data)
+  puts
+  puts "STATS::  { #{game_data} }"
+  puts
 
   game_hash.each do |team, stats_n_dats|
 
@@ -310,6 +305,36 @@ def
                       end
 
                  end
+
+  puts puts puts puts
+
+
+end
+
+
+
+
+
+
+
+def 
+  
+  team_names
+  
+    teams = []
+
+  game_hash.each do |team, stats_n_dats|
+
+    stats_n_dats.each do |details, info|
+
+      if  details == :team_name
+          teams << info     end
+
+                      end
+                 end
+
+  puts puts puts puts                 
+  teams
 
 
 end
@@ -335,6 +360,7 @@ def
                                      end
                  end
 
+  puts puts puts puts                 
   return rebounds
 
 
