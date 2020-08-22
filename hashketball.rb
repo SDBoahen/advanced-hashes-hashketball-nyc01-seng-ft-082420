@@ -208,13 +208,13 @@ end
 
 def 
   
-  team_colors(team)
+  team_colors(team_at)
 
     colors = []
 
   game_hash.each do |team, stats_n_dats|
 
-    if  stats_n_dats[:team_name] == team
+    if  stats_n_dats[:team_name] == team_at
         colors = stats_n_dats[:colors].each do |color|  end
                                             end
                  end
