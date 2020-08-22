@@ -82,7 +82,7 @@ def
 
       team_name: "Charlotte Hornets",
       colors:  [ "Turquoise", "Purple" ],
-      player_names: 
+      players: 
       [
 
         {
