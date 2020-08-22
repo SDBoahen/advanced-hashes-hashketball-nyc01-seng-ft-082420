@@ -169,7 +169,7 @@ def
     stats_n_dats[:players].each do |stats|
 
       if  stats[:player_name] == player_name
-          points = stats[:points]             end
+          points_scored = stats[:points] end
 
                                       end
                  end
