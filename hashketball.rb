@@ -1,7 +1,4 @@
-# Write your code below game_hash
 # Write your code here!
-
-
 
 
 # Write your code below game_hash
@@ -16,11 +13,11 @@ def
 
       team_name: "Brooklyn Nets",
       colors:  [ "Black", "White" ],
-      players: 
+      player_names: 
       [
 
         {
-          player_name: "Alan Anderson",
+          player_name_name: "Alan Anderson",
           number: 0,
           shoe: 16,
           points: 22,
@@ -31,7 +28,7 @@ def
           slam_dunks: 1
         },
         {
-          player_name: "Reggie Evans",
+          player_name_name: "Reggie Evans",
           number: 30,
           shoe: 14,
           points: 12,
@@ -42,7 +39,7 @@ def
           slam_dunks: 7
         },
         {
-          player_name: "Brook Lopez",
+          player_name_name: "Brook Lopez",
           number: 11,
           shoe: 17,
           points: 17,
@@ -53,7 +50,7 @@ def
           slam_dunks: 15
         },
         {
-          player_name: "Mason Plumlee",
+          player_name_name: "Mason Plumlee",
           number: 1,
           shoe: 19,
           points: 26,
@@ -64,7 +61,7 @@ def
           slam_dunks: 5
         },
         {
-          player_name: "Jason Terry",
+          player_name_name: "Jason Terry",
           number: 31,
           shoe: 15,
           points: 19,
@@ -85,11 +82,11 @@ def
 
       team_name: "Charlotte Hornets",
       colors:  [ "Turquoise", "Purple" ],
-      players: 
+      player_names: 
       [
 
         {
-          player_name: "Jeff Adrien",
+          player_name_name: "Jeff Adrien",
           number: 4,
           shoe: 18,
           points: 10,
@@ -100,7 +97,7 @@ def
           slam_dunks: 2
         },
         {
-          player_name: "Bismack Biyombo",
+          player_name_name: "Bismack Biyombo",
           number: 0,
           shoe: 16,
           points: 12,
@@ -111,7 +108,7 @@ def
           slam_dunks: 10
         },
         {
-          player_name: "DeSagna Diop",
+          player_name_name: "DeSagna Diop",
           number: 2,
           shoe: 14,
           points: 24,
@@ -122,7 +119,7 @@ def
           slam_dunks: 5
         },
         {
-          player_name: "Ben Gordon",
+          player_name_name: "Ben Gordon",
           number: 8,
           shoe: 15,
           points: 33,
@@ -133,7 +130,7 @@ def
           slam_dunks: 0
         },
         {
-          player_name: "Kemba Walker",
+          player_name_name: "Kemba Walker",
           number: 33,
           shoe: 15,
           points: 6,
@@ -153,5 +150,193 @@ def
 end
 
 
+
+
+
+
+
+
 # Write code here
+
+def 
+  
+  num_points_scored(player_name)
+  
+    points_scored = 0
+
+  game_hash.each do |team, stats_n_dats|
+  
+    stats_n_dats[:player_names].each do |stats|
+
+      if  stats[:player_name_name] == player_name
+          points = stats[:points]             end
+
+                                      end
+                 end
+
+  points_scored
+
+
+end
+
+
+
+
+def 
+  
+  shoe_size(player_name)
+  
+    size = 0 
+
+  game_hash.each do |team, stats_n_dats|
+
+    stats_n_dats[:player_names].each do |stats|
+
+      if  stats[:player_name_name] == player_name 
+          size = stats[:shoe]                 end
+
+                 end
+                                     end
+
+  size
+
+
+end 
+
+
+
+
+def 
+  
+  team_colors(team)
+
+    colors = []
+
+  game_hash.each do |team, stats_n_dats|
+
+    if  stats_n_dats[:team_name] == team
+        colors = stats_n_dats[:colors].each do |color|  end
+                                            end
+                 end
+
+  colors
+
+
+end
+
+
+
+
+def 
+  
+  team_names
+  
+    teams = []
+
+  game_hash.each do |team, stats_n_dats|
+
+    stats_n_dats.each do |details, info|
+
+      if  details == :team_name
+          teams << info     end
+
+                      end
+                 end
+
+  teams
+
+
+end
+
+
+
+
+def 
+  
+  player_numbers(j_nums)
+
+    jerseys = []
+  
+  game_hash.each do |team, stats_n_dats|
+
+    if stats_n_dats[:team_name] == j_nums
+
+       stats_n_dats.each do |key, value|
+
+        if key == :player_names
+
+           value.each do |player_name|
+
+          jerseys << player_name[:number]
+
+                      end
+        end
+
+                         end
+
+    end
+
+                 end
+
+  return jerseys
+
+
+end
+
+
+
+
+def 
+  
+  player_stats(game_data)
+
+  game_hash.each do |team, stats_n_dats|
+
+    stats_n_dats.each do |key, value|
+
+      if key == :player_names
+
+        value.each do |player_name|
+
+          if game_data == player_name[:player_name_name]
+
+            return player_name
+
+          end
+                   end
+
+      end
+
+                      end
+
+                 end
+
+
+end
+
+
+
+
+def 
+  
+  big_shoe_rebounds
+
+    rebounds = 0 
+    big_shoe = 0 
+  
+  game_hash.each do |team, stats_n_dats|
+
+    stats_n_dats[:player_names].each do |player_name|
+
+      if  player_name[:shoe] > big_shoe
+          big_shoe = player_name[:shoe]
+          rebounds = player_name[:rebounds]  end
+
+                                     end
+                 end
+
+  return rebounds
+
+
+end
 
